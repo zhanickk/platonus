@@ -1,0 +1,23 @@
+.DS_Store
+*.log
+.cursor/
+
+# Legacy TechMart demo (not part of Platonus)
+shop.html
+cart.html
+contacts.html
+news.html
+support.html
+404.html
+product-*.html
+style.css
+main.js
+js/store.js
+js/cart-*.js
+js/layout.js
+js/shop.js
+js/product-*.js
+js/support.js
+
+# Reference screenshots (optional local only)
+assets/image-*.png

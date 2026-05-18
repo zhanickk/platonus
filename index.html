@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Platonus</title>
+  <link rel="stylesheet" href="css/platonus.css" />
+</head>
+<body>
+  <header class="top-header">
+    <button type="button" class="btn-sitemap">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+      Карта сайта
+    </button>
+    <span class="lang-switch">KZ | <span class="active">RU</span> | EN</span>
+    <div class="header-icons">
+      <span class="header-icon" title="Подсказки">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 22h4M12 2a7 7 0 00-4 12.7V17h8v-2.3A7 7 0 0012 2z"/></svg>
+      </span>
+      <span class="header-icon" title="Сообщения">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v12H5.2L4 17V4z"/></svg>
+      </span>
+      <span class="header-icon" title="Уведомления">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 8a6 6 0 10-12 0c0 7-3 7-3 7h18s-3 0-3-7M13.7 21a2 2 0 01-3.4 0"/></svg>
+        <span class="notif-badge">131</span>
+      </span>
+      <div class="user-avatar-wrap">
+        <img class="user-avatar" data-avatar src="assets/user-avatar.png" alt="Аманбек Ерсұлтан Даниярұлы" width="36" height="36" />
+        <span class="online-dot"></span>
+        <div class="user-dropdown">
+          <div class="user-dropdown__head">
+            <img class="user-avatar" data-avatar src="assets/user-avatar.png" alt="" width="48" height="48" />
+            <span class="online-dot" style="left:38px;top:38px"></span>
+            <div class="user-dropdown__name">Аманбек Ерсұлтан Даниярұлы</div>
+          </div>
+          <div class="user-dropdown__divider"></div>
+          <div class="user-dropdown__item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg>
+            Параметры авторизации
+          </div>
+          <div class="user-dropdown__item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.5 2.6a2 2 0 01-.5 2.1L8 9a16 16 0 006 6l.6-.6a2 2 0 012.1-.5c.8.2 1.7.4 2.6.5A2 2 0 0122 16.9z"/></svg>
+            Обращения к консультантам
+          </div>
+          <div class="user-dropdown__item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+            Новости МНВО РК
+          </div>
+          <div class="user-dropdown__item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M23 4v6h-6M1 20v-6h6"/><path d="M3.5 9a9 9 0 0114-3.5L23 10M1 14l5.5 4.5a9 9 0 0014-3.5"/></svg>
+            Релизы обновлений
+          </div>
+          <div class="user-dropdown__divider"></div>
+          <div class="user-dropdown__logout">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4M16 17l5-5-5-5M21 12H9"/></svg>
+            Выход
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <aside class="sidebar">
+    <div class="sidebar__logo">
+      <div class="logo-mark">
+        <div class="logo-mark__icon">P</div>
+        <span class="logo-mark__text">PLATONUS</span>
+      </div>
+    </div>
+    <nav class="sidebar__nav">
+      <button type="button" class="sidebar__btn active" id="sidebarDashboard" title="Учебный процесс">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M7 9h2v4H7zM11 7h2v6h-2zM15 10h2v3h-2z"/></svg>
+      </button>
+      <button type="button" class="sidebar__btn" title="Книга">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+      </button>
+      <button type="button" class="sidebar__btn" title="Документ">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+      </button>
+      <button type="button" class="sidebar__btn" title="Задачи">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12l2 2 4-4"/></svg>
+      </button>
+      <button type="button" class="sidebar__btn" title="Обучение">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 10v6M2 10l10-6 10 6-10 6z"/><path d="M6 12v5c0 2 3 3 6 3s6-1 6-3v-5"/></svg>
+      </button>
+      <button type="button" class="sidebar__btn" title="Люди">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+      </button>
+      <button type="button" class="sidebar__btn" title="Сетка">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+      </button>
+      <button type="button" class="sidebar__btn" title="Справедливость">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v18M5 7h14M7 21h10"/></svg>
+      </button>
+      <button type="button" class="sidebar__btn" title="Меню">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/></svg>
+      </button>
+    </nav>
+  </aside>
+
+  <div id="flyoutOverlay" class="flyout-overlay"></div>
+  <nav id="flyoutMenu" class="flyout-menu" aria-label="Учебный процесс">
+    <div class="flyout-menu__head">
+      <span class="flyout-menu__title">Учебный процесс</span>
+      <button type="button" class="flyout-menu__close" id="flyoutClose" aria-label="Закрыть">×</button>
+    </div>
+    <ul class="flyout-menu__list">
+      <li><a href="#" onclick="return false">Академический календарь</a></li>
+      <li><a href="#" onclick="return false">Индивидуальный учебный план</a></li>
+      <li><a href="#" onclick="return false">Учебная аудитория</a></li>
+      <li><a href="#" onclick="return false">Расписание</a></li>
+      <li><a href="journal.html">Журнал текущей успеваемости</a></li>
+      <li><a href="#" onclick="return false">Задания</a></li>
+      <li><a href="#" onclick="return false">Тестирование</a></li>
+      <li><a href="#" onclick="return false">Апелляции</a></li>
+      <li><a href="#" onclick="return false">Транскрипт</a></li>
+    </ul>
+  </nav>
+
+  <div class="app">
+    <div class="main-wrap">
+      <main class="main-content">
+        <h1 class="welcome-title">Добро пожаловать, Аманбек Ерсұлтан Даниярұлы</h1>
+
+        <div class="quick-links">
+          <div class="quick-link-box">Добавить быструю ссылку</div>
+          <div class="quick-link-box">Добавить быструю ссылку</div>
+          <div class="quick-link-box">Добавить быструю ссылку</div>
+        </div>
+
+        <section class="app-banner" id="appBanner">
+          <button type="button" class="app-banner__close" id="bannerClose" aria-label="Закрыть">×</button>
+          <div class="app-banner__text">
+            <h3>Platonus в твоем мобильном телефоне!</h3>
+            <p>Скачай приложение для более удобного просмотра</p>
+            <div class="app-banner__stores">
+              <span class="store-btn"> ios</span>
+              <span class="store-btn"> Android</span>
+            </div>
+          </div>
+          <div class="app-banner__phone" aria-hidden="true"></div>
+        </section>
+
+        <section class="calendar-section">
+          <div class="calendar-toolbar">
+            <button type="button" class="btn-add-event">Добавить событие</button>
+            <div class="calendar-filters">
+              <label class="filter-item"><input type="checkbox" checked /><span class="filter-dot" style="background:#f5d76e"></span> Персональные</label>
+              <label class="filter-item"><input type="checkbox" checked /><span class="filter-dot" style="background:#7eb8da"></span> Рубежный контроль</label>
+              <label class="filter-item"><input type="checkbox" checked /><span class="filter-dot" style="background:#e88"></span> Экзамены</label>
+              <label class="filter-item"><input type="checkbox" checked /><span class="filter-dot" style="background:#8cd68c"></span> Академические</label>
+              <label class="filter-item"><input type="checkbox" checked /><span class="filter-dot" style="background:#9cf"></span> Тестирование</label>
+              <label class="filter-item"><input type="checkbox" checked /><span class="filter-dot" style="background:#f8a8d8"></span> Регистрация на дисциплины</label>
+              <label class="filter-item"><input type="checkbox" checked /><span class="filter-dot" style="background:#ffb366"></span> Мероприятия студенческих объединений</label>
+            </div>
+          </div>
+
+          <div class="calendar-nav">
+            <div class="calendar-nav__month">
+              <div class="calendar-nav__arrows">
+                <button type="button">&lt;</button>
+                <button type="button">&gt;</button>
+              </div>
+              <strong>мая 2026</strong>
+            </div>
+            <div class="view-toggle">
+              <button type="button" class="active">Месяц</button>
+              <button type="button">Неделя</button>
+              <button type="button">День</button>
+            </div>
+          </div>
+
+          <table class="calendar-grid" aria-label="Календарь май 2026">
+            <thead>
+              <tr>
+                <th>ПН</th><th>ВТ</th><th>СР</th><th>ЧТ</th><th>ПТ</th><th>СБ</th><th>ВС</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="cal-other-month"><span class="cal-day-num">27</span></td>
+                <td class="cal-other-month"><span class="cal-day-num">28</span></td>
+                <td class="cal-other-month"><span class="cal-day-num">29</span></td>
+                <td class="cal-other-month"><span class="cal-day-num">30</span></td>
+                <td><span class="cal-day-num">1</span><div class="cal-event ev-pink">Регистрация</div></td>
+                <td><span class="cal-day-num">2</span></td>
+                <td><span class="cal-day-num">3</span></td>
+              </tr>
+              <tr>
+                <td><span class="cal-day-num">4</span><div class="cal-event ev-pink">Регистрация</div></td>
+                <td><span class="cal-day-num">5</span><div class="cal-event ev-pink">Регистрация</div></td>
+                <td><span class="cal-day-num">6</span><div class="cal-event ev-pink">Регистрация</div></td>
+                <td><span class="cal-day-num">7</span><div class="cal-event ev-blue">Рубежный контрол...</div></td>
+                <td><span class="cal-day-num">8</span><div class="cal-event ev-blue">Рубежный контрол...</div></td>
+                <td><span class="cal-day-num">9</span></td>
+                <td><span class="cal-day-num">10</span></td>
+              </tr>
+              <tr>
+                <td><span class="cal-day-num">11</span><div class="cal-event ev-blue">Рубежный контрол...</div></td>
+                <td><span class="cal-day-num">12</span><div class="cal-event ev-red">Экзамен</div></td>
+                <td><span class="cal-day-num">13</span><div class="cal-event ev-red">Экзамен</div><div class="cal-event ev-green">Экзаменационная...</div></td>
+                <td><span class="cal-day-num">14</span><div class="cal-event ev-green">Производственная...</div></td>
+                <td><span class="cal-day-num">15</span><div class="cal-event ev-pink">Регистрация</div></td>
+                <td><span class="cal-day-num">16</span></td>
+                <td><span class="cal-day-num">17</span></td>
+              </tr>
+              <tr>
+                <td><span class="cal-day-num today">18</span><div class="cal-event ev-pink">Регистрация</div><div class="cal-event ev-blue">Рубежный контрол...</div></td>
+                <td><span class="cal-day-num">19</span><div class="cal-event ev-red">Экзамен</div></td>
+                <td><span class="cal-day-num">20</span><div class="cal-event ev-green">Экзаменационная...</div></td>
+                <td><span class="cal-day-num">21</span></td>
+                <td><span class="cal-day-num">22</span><div class="cal-event ev-purple">Тестирование</div></td>
+                <td><span class="cal-day-num">23</span></td>
+                <td><span class="cal-day-num">24</span></td>
+              </tr>
+              <tr>
+                <td><span class="cal-day-num">25</span><div class="cal-event ev-pink">Регистрация</div></td>
+                <td><span class="cal-day-num">26</span><div class="cal-event ev-blue">Рубежный контрол...</div></td>
+                <td><span class="cal-day-num">27</span><div class="cal-event ev-red">Экзамен</div></td>
+                <td><span class="cal-day-num">28</span><div class="cal-event ev-green">Производственная...</div></td>
+                <td><span class="cal-day-num">29</span></td>
+                <td><span class="cal-day-num">30</span></td>
+                <td><span class="cal-day-num">31</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+
+      <aside class="right-panel">
+        <section class="panel-block">
+          <div class="panel-block__head">
+            <h3>Объявления</h3>
+            <a href="#" onclick="return false">Все</a>
+          </div>
+          <article class="info-card">
+            Обращаем внимание! Срочная оплата обучения за 2 семестр 2025-2026 учебного года
+            <div class="info-card__date">2026-04-28 — 10:18:26</div>
+          </article>
+          <article class="info-card">
+            Регламент по ЖТУ 2025-2026 учебный год
+            <div class="info-card__date">2026-04-15 — 14:02:11</div>
+          </article>
+          <article class="info-card">
+            Расписание физической культуры на весенний семестр 2025-2026
+            <div class="info-card__date">2026-03-20 — 09:45:00</div>
+          </article>
+          <article class="info-card">
+            Инструкция для студентов по работе в Platonus
+            <div class="info-card__date">2026-02-10 — 11:30:00</div>
+          </article>
+        </section>
+
+        <section class="panel-block">
+          <div class="panel-block__head">
+            <h3>Уведомления</h3>
+            <a href="#" onclick="return false">Все</a>
+          </div>
+          <article class="info-card">
+            <span class="info-card__dot"></span>
+            Добавлена запись в транскрипт по дисциплине «Физическая культура»
+            <div class="info-card__date">2026-05-08 12:49:23</div>
+          </article>
+          <article class="info-card">
+            <span class="info-card__dot"></span>
+            Дисциплина «Физика» установлена в расписании на 2025-2026 учебный год
+            <div class="info-card__date">2026-04-17 09:55:54</div>
+          </article>
+          <article class="info-card">
+            <span class="info-card__dot"></span>
+            Дисциплина «Дифференциальное и интегральное исчисление II» установлена в расписании
+            <div class="info-card__date">2026-04-17 09:55:54</div>
+          </article>
+          <article class="info-card">
+            <span class="info-card__dot"></span>
+            Дисциплина «Иностранный язык 2» установлена в расписании на 2025-2026 учебный год
+            <div class="info-card__date">2026-04-17 09:55:54</div>
+          </article>
+          <article class="info-card">
+            <span class="info-card__dot"></span>
+            Дисциплина «Основы IP - телефонии» установлена в расписании на 2025-2026 учебный год
+            <div class="info-card__date">2026-04-17 09:55:54</div>
+          </article>
+        </section>
+      </aside>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    ©Platonus v6.26.4 (build# 23), 2006-2026 <span class="brand">Platonus</span>
+  </footer>
+
+  <script src="js/platonus.js"></script>
+</body>
+</html>

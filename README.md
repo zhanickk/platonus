@@ -1,13 +1,16 @@
-# Platonus
+# TechStore — Online Shop
 
-Учебный макет студенческого портала Platonus (HTML/CSS/JS).
+Одностраничный интернет-магазин Apple-техники (`online shopp.html` → `index.html`).
 
-## Страницы
+## GitHub Pages
 
-- `index.html` — главная (календарь, объявления, уведомления)
-- `journal.html` — журнал текущей успеваемости
+Сайт публикуется автоматически при push в `main`.
 
-## Запуск локально
+**URL:** https://zhanickk.github.io/platonus/
+
+> Чтобы URL совпадал с названием проекта, переименуйте репозиторий на GitHub в `adilet-aqua-service` (или другое имя) — адрес станет `https://zhanickk.github.io/<имя-репо>/`.
+
+## Локальный запуск
 
 ```bash
 python3 -m http.server 8080
@@ -15,12 +18,6 @@ python3 -m http.server 8080
 
 Откройте http://localhost:8080
 
-## GitHub Pages
+## Platonus (отдельно)
 
-Сайт публикуется автоматически при push в `main` (workflow `.github/workflows/deploy-pages.yml`).
-
-**Первый запуск:** в репозитории на GitHub откройте **Settings → Pages → Build and deployment → Source** и выберите **GitHub Actions**.
-
-После успешного деплоя сайт будет доступен по адресу:
-
-**https://zhanickk.github.io/platonus/**
+Макет студенческого портала лежит в папке `platonus/` и не является главной страницей сайта.

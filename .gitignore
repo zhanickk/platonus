@@ -1,8 +1,9 @@
 .DS_Store
 *.log
 .cursor/
+drilling-rig.jpg
 
-# Legacy TechMart demo (not part of Platonus)
+# Legacy multi-page TechMart demo (not deployed)
 shop.html
 cart.html
 contacts.html

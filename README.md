@@ -17,4 +17,10 @@ python3 -m http.server 8080
 
 ## GitHub Pages
 
-Репозиторий можно опубликовать через **Settings → Pages → Deploy from branch `main` / root**.
+Сайт публикуется автоматически при push в `main` (workflow `.github/workflows/deploy-pages.yml`).
+
+**Первый запуск:** в репозитории на GitHub откройте **Settings → Pages → Build and deployment → Source** и выберите **GitHub Actions**.
+
+После успешного деплоя сайт будет доступен по адресу:
+
+**https://zhanickk.github.io/platonus/**
